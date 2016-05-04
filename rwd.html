@@ -1,0 +1,624 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title> GTS JS Style Guide</title>
+
+    <link rel="stylesheet" href="styles/default.min.css">
+    <link href="styles/prettify.css" type="text/css" rel="stylesheet" />
+    <link href="styles/rwd.css" type="text/css" rel="stylesheet" />
+    <script src="js/prettify.js"></script>
+    <script src="js/rwd.js"></script>
+</head>
+
+<body>
+    <div class="wrapper" id="wrapper">
+
+        <h1 class="heading">Responsive Web Design Basics</h1>
+        <div id="content">
+            <div id="leftbar"></div>
+            <div id="rightbar">
+                <h2 class="firstHeading">RWD Basics</h2>
+                <div class="hr"></div>
+                <h3>Responsive web design (RWD) by Definition</h3>
+                <ul class="ul">
+                    <li>
+                        Responsive web design (RWD) is an approach to web design aimed at crafting sites to provide an optimal viewing experience—easy reading and navigation with a minimum of resizing, panning, and scrolling—across a wide range of devices (from desktop computer monitors to mobile phones).
+                    </li>
+                </ul>
+                <ul class="ul">
+                    <li>
+                        A site designed with RWD adapts the layout to the viewing environment by using fluid, proportion-based grids, flexible images and CSS3 media queries.
+                    </li>
+                    <li style="list-style-type:none;">
+                        <ul class="ul" style="list-style-type:circle; padding-top: 5px;">
+                            <li>
+                                A site designed with RWD adapts the layout to the viewing environment by using fluid, proportion-based grids, flexible images and CSS3 media queries.
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="list-style-type:none;">
+                        <ul class="ul" style="list-style-type:circle; padding-top: 5px;">
+                            <li>
+                                Flexible images are also sized in relative units, so as to prevent them from displaying outside their containing element.
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="list-style-type:none;">
+                        <ul class="ul" style="list-style-type:circle; padding-top: 5px;">
+                            <li>
+                                Media queries allow the page to use different CSS style rules based on characteristics of the device the site is being displayed on, most commonly the width of the browser.
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+                <h3>RWD in Action</h3>
+                <ul class="ul" style="list-style-type: none;">
+                    <li>
+                        <video width="400" controls>
+                            <source src="assets/media1.MP4" type="video/mp4">
+                        </video>
+                    </li>
+                </ul>
+                <h3>Super Flexible</h3>
+                <ul>
+                    <li>Responsive web design sites are fluid, meaning the content moves freely across all screen resolutions and all devices. Both the grids and the images are fluid. Just as a liquid spreads out or draws in to allow its content to fill an allotted space and retain its appearance, responsive web design’s fluidity achieves the same result with website content on a device screen.</li>
+                    <li style="list-style-type: none;" id="image9">
+                    </li>
+                </ul>
+                <h3>Cost effective</h3>
+                <ul>
+                    <li>
+                        The advantages of having a single site that conforms to the need of all devices are significant when compared to having two separate websites. One website costs less than two, and the savings can be substantial. Responsive web design enhances SEO efforts by having all your visitors directed to a single site no matter what they prefer to use as a device.
+                    </li>
+                    <li style="list-style-type: none;">
+                        <img src="assets\image10.png" />
+                    </li>
+                </ul>
+
+                <h3>In one picture TBD</h3>
+                <ul>
+                    <li>Responsive web design in one picture</li>
+
+                    <li style="list-style-type: none;">
+                        <img src="assets\image11.gif" />
+                    </li>
+                </ul>
+                <h2 class="firstHeading">How it's made</h2>
+                <div class="hr"></div>
+                <h3>Media queries</h3>
+                <ul>
+                    <li>The definition of Media Queries</li>
+
+                    <li style="list-style-type: none;">
+                        Media queries enable us to create a responsive experience, where specific styles are applied to small screens, large screens and anywhere in between. The media query syntax allows for the creation of rules that can be applied depending on device characteristics. Media queries allow the page to use different CSS style rules based on characteristics of the device the site is being displayed on, most commonly the width of the browser.
+                    </li>
+                </ul>
+                <h3>Syntax</h3>
+                <ul>
+                    <li>Change the background-color if the document is smaller than 301 pixels wide:</li>
+                    <pre class="details-body-pre">
+						<code class="details-body-code prettyprint lang-css">
+@media screen and (max-width: 300px) {
+	body { 
+		background-color: lightblue; 
+	}
+}
+
+@media mediatype and|not|only (media feature) {   /*CSS-Code;*/ }
+/*HTML*/
+	< link rel="stylesheet" media="mediatype and|not|only (media feature)" href="mystylesheet.css" / >
+						</code>
+					</pre>
+                </ul>
+                <h3>Media types</h3>
+                <ul>
+                    <li style="list-style-type: none;">
+                        <table style="border: 2px solid #EEE; width: 85%;">
+                            <tbody>
+                                <tr>
+                                    <td colspan="3" style="text-align: justify;">
+                                        <table style="border-collapse: collapse; border: 1px solid #fff; width: 100%;">
+                                            <tbody>
+                                                <tr>
+                                                    <th style="border-right: 1px solid #FFF; text-align: center; background-color: #EEE; color: #000; padding: 2pt;" valign="middle"><strong>Value</strong>
+                                                    </th>
+                                                    <th style="border-right: 1px solid #FFF; text-align: center; background-color: #EEE; color: #000; padding: 2pt;" valign="middle"><strong>Description</strong>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">
+                                                        all
+                                                    </td>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Used for all media type devices</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">print</td>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Used for printers</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">screen</td>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Used for computer screens, tablets, smart-phones etc.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">speech</td>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Used for screenreaders that "reads" the page out loud</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+                <h3>Media Features</h3>
+                <ul>
+                    <li style="list-style-type: none;">
+                        <table style="border: 2px solid #EEE; width: 85%;">
+                            <tbody>
+                                <tr>
+                                    <td colspan="3" style="text-align: justify;">
+                                        <table style="border-collapse: collapse; border: 1px solid #fff; width: 100%;">
+                                            <tbody>
+                                                <tr>
+                                                    <th style="border-right: 1px solid #FFF; text-align: center; background-color: #EEE; color: #000; padding: 2pt;" valign="middle"><strong>Value</strong>
+                                                    </th>
+                                                    <th style="border-right: 1px solid #FFF; text-align: center; background-color: #EEE; color: #000; padding: 2pt;" valign="middle"><strong>Description</strong>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">
+                                                        aspect-ratio
+                                                    </td>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Specifies the ratio between the width and the height of the display area</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">color</td>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Specifies the number of bits per color for the device</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">color-index</td>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Specifies the number of colors the device can display</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">device-aspect-ratio</td>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Specifies the ratio between the width and the height of the device</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">device-height</td>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Specifies the height of the device, such as a computer screen</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">device-width</td>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Specifies the width of the device, such as a computer screen</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">grid</td>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Specifies whether the device is a grid device or not</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">height</td>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Specifies the height of the display area, such as a browser window</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">max-aspect-ratio</td>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Specifies the minimum ratio between the width and the height of the display area</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">max-color</td>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Specifies the maximum number of bits per color for the device</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">max-color-index</td>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Specifies the maximum number of colors the device can display</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">max-device-aspect-ratio</td>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Specifies the minimum ratio between the width and the height of the device</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">max-device-height</td>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Specifies the maximum height of the device, such as a computer screen</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">max-device-width</td>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Specifies the maximum width of the device, such as a computer screen</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">max-height</td>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Specifies the maximum height of the display area, such as a browser window</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">max-monochrome</td>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Specifies the maximum number of bits per "color" on a greyscale the device</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">max-resolution</td>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Specifies the maximum resolution of the device, using dpi or dpcm</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">max-width</td>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Specifies the maximum width of the display area, such as a browser window</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">min-aspect-ratio</td>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Specifies the minimum ratio between the width and the height of the display area</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">min-color</td>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Specifies the minimum number of bits per color for the device</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">min-color-index</td>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Specifies the minimum number of colors the device can display</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">min-device-aspect-ratio</td>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Specifies the minimum ratio between the width and the height of the device</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">min-device-width</td>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Specifies the minimum width of the device, such as a computer screen</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">min-device-height</td>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Specifies the minimum height of the device, such as a computer screen</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">min-height</td>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Specifies the minimum height of the display area, such as a browser window</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">min-monochrome</td>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Specifies the minimum number of bits per "color" on a greyscale the device</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">min-resolution</td>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Specifies the minimum resolution of the device, using dpi or dpcm</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">min-width</td>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Specifies the minimum width of the display area, such as a browser window</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">monochrome</td>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Specifies the number of bits per "color" on a greyscale the device</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">orientation</td>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Specifies the whether the display is in landscape mode or portrait mode</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">resolution</td>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Specifies the resolution of the device, using dpi or dpcm</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">scan</td>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Specifies progressive or interlaced scanning of a television</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding: 5pt; text-align: center;">width</td>
+                                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">Specifies the width of the display area, such as a browser window</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+                <h2 class="firstHeading">Live example : Betty Crocker</h2>
+                <div class="hr"></div>
+                <h3>Mobile portrait (320x480)</h3>
+                <ul>
+                    <li style="list-style-type: none;" id="image12">
+                    </li>
+                    <li>CSS</li>
+                    <pre class="details-body-pre">
+						<code class="details-body-code prettyprint lang-css">
+@media screen and (max-width:320px) {
+	/* specific css */
+}
+						</code>
+					</pre>
+                </ul>
+                <h3>Mobile landscape (480x320)</h3>
+                <ul>
+                    <li style="list-style-type: none;" id="image13"></li>
+                    <li>CSS</li>
+                    <pre class="details-body-pre">
+						<code class="details-body-code prettyprint lang-css">
+@media screen and (max-width:480px) {
+	/* specific css */
+}
+						</code>
+					</pre>
+                </ul>
+                <h3>Mobile landscape (600x800)</h3>
+                <ul>
+                    <li style="list-style-type: none;" id="image14"></li>
+                    <li>CSS</li>
+                    <pre class="details-body-pre">
+						<code class="details-body-code prettyprint lang-css  ">
+@media screen and (max-width:600px) {
+	/* specific css */
+}
+						</code>
+					</pre>
+                </ul>
+
+                <h3>Mobile landscape (800x600)</h3>
+                <ul>
+                    <li style="list-style-type: none;" id="image15"></li>
+                    <li>CSS</li>
+                    <pre class="details-body-pre">
+						<code class="details-body-code prettyprint lang-css  ">
+@media screen and (max-width:800px) and (orientation:landscape) {
+	/* specific css */
+}
+						</code>
+					</pre>
+                </ul>
+
+                <h3>Tablet portrait (768x1024)</h3>
+                <ul>
+                    <li style="list-style-type: none;" id="image16"></li>
+                    <li>CSS</li>
+                    <pre class="details-body-pre">
+						<code class="details-body-code prettyprint lang-css  ">
+@media screen and (max-width:768px) and (orientation:portrait) {
+	/* specific css */
+}
+						</code>
+					</pre>
+                </ul>
+                <h3>Tablet landscape (1024x768)</h3>
+                <ul>
+                    <li style="list-style-type: none;" id="image17"></li>
+                    <li>CSS</li>
+                    <pre class="details-body-pre">
+						<code class="details-body-code prettyprint lang-css  ">
+@media screen and (max-width:1024px) and (orientation:landscape) {
+	/* specific css */
+}
+						</code>
+					</pre>
+                </ul>
+                <h3>Other</h3>
+                <ul>
+                    <li style="list-style-type: none;" id="image18"></li>
+                    <li>CSS</li>
+                    <pre class="details-body-pre">
+						<code class="details-body-code prettyprint lang-css  ">
+No @media specified
+						</code>
+					</pre>
+                </ul>
+                <h2 class="firstHeading">How to make changes</h2>
+                <div class="hr"></div>
+                <h3>JavaScript</h3>
+                <ul>
+                    <li>Changes made with javascript will be applied to all viewports, there is no way to make them separately for each viewport size.</li>
+                    <li>JavaScript is applied once and it’s not possible to revert the changes made by it.</li>
+                    <li>Can be used for making initial changes to default content. After that the physical content(DOM tree) will remain the same for all viewports, only styles could be changed.</li>
+                </ul>
+                <h3>Switching Elements Visibility-1</h3>
+                <ul>
+
+
+                    <li style="list-style-type: none;" id="_image16"></li>
+                    <li style="list-style-type: none;"></li>
+                    <li style="list-style-type: none;" id="_image17"></li>
+
+                </ul>
+
+                <h3>Switching elements visibility-2</h3>
+                <ul>
+                    <li>CSS: Both elements are present on page, but only one of them is visible at a time</li>
+                    <pre class="details-body-pre">
+						<code class="details-body-code prettyprint lang-css  ">
+.desktop_menu{
+	display:none;
+}
+.mobile_menu{
+	display:block;
+}
+@media screen and (min-width:768px) {
+	.desktop_menu{
+		display:block;
+	}
+	.mobile_menu{
+		display:none;
+	}
+}
+						</code>
+					</pre>
+                </ul>
+                <h3>Changing a floatation-1</h3>
+                <ul>
+
+                    <li style="list-style-type: none;" id="image19"></li>
+                    <pre class="details-body-pre">
+						<code class="details-body-code prettyprint lang-css  ">
+.central{
+	width:65%;
+	float:left;
+}
+.sidebarContainer{
+	width:35%;
+	float:right;
+}
+						</code>
+					</pre>
+                </ul>
+                <h3>Changing a floatation-2</h3>
+                <ul>
+
+                    <li style="list-style-type: none;" id="image20"></li>
+                    <li style="list-style-type: none;"></li>
+                    <li style="list-style-type: none;" id="image21"></li>
+                    <pre class="details-body-pre">
+						<code class="details-body-code prettyprint lang-css  ">
+.central{
+	width:100%;
+}
+.sidebarContainer{
+	width:100%;
+}						</code>
+					</pre>
+                </ul>
+
+                <h3>Replacing the text copies</h3>
+                <ul>
+
+                    <li style="list-style-type: none;" id="image22"></li>
+                    <li style="list-style-type: none;"></li>
+                    <li style="list-style-type: none;" id="image23"></li>
+                    <li style="list-style-type: square;">
+                        New text copy can be managed by CSS only, but the initial copy has to be erased by javascript code. There is a case when no javascript usage is necessary, but the new copy’s dimensions should be pre-defined and remain static for each viewport size.
+                    </li>
+                    <pre class="details-body-pre">
+						<code class="details-body-code prettyprint lang-js  ">
+/*Using javascript to remove the initial text copy*/
+$(“h2”).text(‘’); 
+						</code>
+					</pre>
+                    <pre class="details-body-pre">
+						<code class="details-body-code prettyprint lang-css  ">
+/*New text copy inserted with CSS*/
+h2:before{
+	content:”Hey there”;
+}
+						</code>
+					</pre>
+                    <pre class="details-body-pre">
+						<code class="details-body-code prettyprint lang-css  ">
+/*Can be separately managed within each viewport size*/
+@media screen and (max-width:380px) {
+	h2:before{
+		content:”Hey”;
+		font-size:small;
+	}
+}						</code>
+					</pre>
+                </ul>
+                <h3>Moving a content</h3>
+                <ul>
+
+                    <li style="list-style-type: square;">First, the target content should be copied to all possible locations, where it’s going to be shown for different viewport sizes.</li>
+                    <pre class="details-body-pre">
+						<code class="details-body-code prettyprint lang-js  ">
+$(‘#placeholder1’).append($(‘#target’).clone()); 
+$(‘#placeholder2’).append($(‘#target’).clone()); 
+/*…*/
+						</code>
+					</pre>
+                    <li style="list-style-type: square;">!Note that not all content can be copied safely. Beware of copying scripts, ads, tracking pixels and iframes.</li>
+                    <li style="list-style-type: square;">“Switching elements visibility” technique should be used afterwards:</li>
+                    <pre class="details-body-pre">
+						<code class="details-body-code prettyprint lang-css  ">
+@media screen and (max-width:320px) {
+	#placeholder1 #target{
+		display:none;
+	}
+	#placeholder2 #target{
+		display:block;
+	}
+}
+@media screen and (max-width:480px) {
+	#placeholder1 #target{
+		display:block;
+	}
+	#placeholder2 #target{
+		display:none;
+	}
+}
+						</code>
+					</pre>
+                </ul>
+                <h2 class="firstHeading">How to estimate possibilities</h2>
+                <div class="hr"></div>
+                <h3>Estimations</h3>
+                <ul>
+                    <li style="list-style-type: square;">A person who has an excellent knowledge of CSS should participate in campaign preparation process.</li>
+                    <li style="list-style-type: square;">In perfect world a web-designer should be able to create completely feasible designs.</li>
+                    <li style="list-style-type: square;">Delivering a campaign to N different viewports doesn’t necessarily imply that N times more time should be spent on it. Most of CSS for smaller screen size will be automatically applied from rules, created for previous, bigger screen size. Of course, it depends on the campaign specifics, so there may be exceptions.</li>
+                </ul>
+                <h2 class="firstHeading">RWD best practices</h2>
+                <div class="hr"></div>
+                <h3>Tell users which orientation works best</h3>
+                <ul>
+                    <li style="list-style-type: none;" id="image24"></li>
+                    <li style="list-style-type: square;">Design for both landscape and portrait, or encourage users to switch to the optimal screen orientation - but make sure your important calls-to-action can be completed even if they ignore the suggestion to switch.</li>
+                    <li style="list-style-type: square;">Study participants tended to stay in the same screen orientation until something prompted them to switch, like trying to read small type or watch a video.</li>
+                </ul>
+                <h3>Avoid 'full site' labels</h3>
+                <ul>
+                    <li style="list-style-type: none;" id="image25"></li>
+                    <li style="list-style-type: square;">If you provide a link on a page to a separate desktop experience, use terms like 'desktop' instead of 'full' to avoid confusion between what's available between the sites.</li>
+                    <li style="list-style-type: square;">When study participants saw an option for “full site” vs “mobile site”, they assumed the mobile site was condensed and chose the full site instead. One participant preferred the desktop site because it had “so much more information” - even though the mobile and desktop sites had the same content.</li>
+                </ul>
+                <h3>Keep Calls To Action Front and Center</h3>
+                <ul>
+                    <li style="list-style-type: none;" id="image26"></li>
+                    <li style="list-style-type: none;" id="image27"></li>
+                    <li style="list-style-type: square;">It can be easy for mobile users to miss menu items, so always put your key calls-to-action where you know users will see them.</li>
+                    <li style="list-style-type: square;">Study participants had the easiest time completing tasks on sites that clearly displayed primary calls-to-action in the main body of the site, with secondary tasks available through menus or below the fold. Your mobile calls-to-action will probably be different than on desktop, put yourself in your users’ shoes when determining placement.</li>
+                </ul>
+                <h3>Keep Menus Short and Sweet</h3>
+                <ul>
+                    <li style="list-style-type: none;" id="image28"></li>
+                    <li style="list-style-type: square;">An extensive menu might work well for your desktop site, but mobile users won't have the patience to scroll through a long list of options to try and find what they want. Consider how you can present the fewest menu items possible.</li>
+                </ul>
+                <h3>Make It Easy To Get To The Home Page</h3>
+                <ul>
+                    <li style="list-style-type: none;" id="image29"></li>
+                    <li style="list-style-type: square;">When mobile users navigate through your site, they want an easy way to get back to your initial homepage.</li>
+                    <li style="list-style-type: square;">For example, they may want to get back to do another search or start a new browse experience.</li>
+                </ul>
+                <h3>Don't let promotions steal the show</h3>
+                <ul>
+                    <li style="list-style-type: none;" id="image30"></li>
+                    <li style="list-style-type: none;" id="image31"></li>
+                    <li style="list-style-type: square;">Promotions and ads can overshadow the content they're next to, and make it harder for users to accomplish tasks.</li>
+                    <li style="list-style-type: square;">Participants visiting one company’s mobile site were distracted by a large promotional banner and missed the navigational buttons beneath it, making it hard for them to learn more about the company’s offerings.</li>
+                </ul>
+                <h3>Keep users in a single browser window</h3>
+                <ul>
+                    <li style="list-style-type: none;" id="image32"></li>
+                    <li style="list-style-type: square;">Switching between windows on a smartphone can be troublesome, and raises the risk that visitors might not find their way back to your site.</li>
+                    <li style="list-style-type: square;">Try to keep users in one place by avoiding calls-to-action that launch new windows.</li>
+                </ul>
+                <h3>Optimize text for reading</h3>
+                <ul>
+                    <li style="list-style-type: none;" id="image33"></li>
+                    <li style="list-style-type: square;">Classic readability theory suggests that an ideal column should contain 70 to 80 characters per line (about 8 to 10 words in English), thus each time the width of a text block grows past about 10 words, a breakpoint should be considered.</li>
+                </ul>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="wrapper">
+            <div id="copyright">
+                <span>© 2005-2011 Maxymiser LTD.<br/>
+			Your use of this software indicates acceptance of current 
+			<a href="#" style="text-decoration:underline;">Terms of Use</a><br/>
+			Release Notes for current Maxymiser version.
+			</span>
+            </div>
+            <div id="contact">Please call US: +1 212 300 6360
+                <br/> UK: +44 (0) 203 375 0100
+                <br/> DE: +49 (0) 204 569 4374
+                <br/> You can also contact us or visit our <a href="http://www.maxymiser.com/">website</a>
+            </div>
+            <br style="clear: both" />
+        </div>
+    </div>
+</body>
+
+</html>
